@@ -1,12 +1,10 @@
 
 html{
   margin:0px;
-  max-width: 100vw;
-  min-height: 75vh;
+  height:100%;
 }
 
 body{
-  background-color: lightgrey;
   font-family: 'Signika', sans-serif;
 }
 
@@ -15,22 +13,13 @@ h1{
   text-transform: uppercase;
 }
 
-main{
-  max-height: 10%;
 
-}
 
 /********************navbar*************************/
-@media (min-width:1000px) {
+@media (min-width:768px) {
   nav{
     border-right : 1px solid black;
   }
-  
-  ul{
-    justify-content:start;
-    
-  }
-}
 
 /**********************************animation nav bar***************************/
 
@@ -124,6 +113,42 @@ main{
   margin-bottom:0;
   font-size:13px;
   opacity:0.6;
+  
 }
 
 /* Credit to https://epicbootstrap.com/snippets/footer-with-columns */
+
+
+/***************repère*************/
+
+/* main{
+  border: 1px solid red;
+}
+
+ul{
+  border: 1px solid blue;
+}
+
+li{
+  border: 1px solid green
+}
+
+nav{
+  border: 1px solid pink;
+}
+
+article{
+  border: 1px solid yellow;
+} 
+
+footer{
+  border: 1px solid orange;
+}
+
+img{
+  border: thick double #32a1ce;
+}
+
+section{
+  border: 1px solid black;
+} */
