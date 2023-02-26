@@ -23,7 +23,37 @@ h1{
 }
 /**********************************animation nav bar***************************/
 
+nav>ul>li>a {
+  text-decoration: none;
+  position: relative;
+}
 
+nav>ul>li>a::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  bottom: 0;
+  left: 0;
+  background-color: #000;
+  transform-origin: center;
+  transform: scaleX(0);
+  transition: transform 0.3s ease-in-out;
+}
+
+nav>ul>li>a:hover::after {
+  animation: underline 0.1s ease-in-out forwards;
+  text-shadow: 2px 2px 2px black;
+}
+
+@keyframes underline {
+  0% {
+    transform: scaleX(0);
+  }
+  100% {
+    transform: scaleX(1);
+  }
+}
 
 
 

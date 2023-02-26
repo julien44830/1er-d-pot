@@ -1,5 +1,4 @@
-
-html{
+ html{
   margin:0px;
   height:100%;
 }
@@ -8,13 +7,6 @@ body{
   font-family: 'Signika', sans-serif;
 }
 
-h1{
-  text-align: center;
-  text-transform: uppercase;
-}
-
-
-
 /********************navbar*************************/
 @media (min-width:768px) {
   nav{
@@ -22,11 +14,55 @@ h1{
   }
 }
 /**********************************animation nav bar***************************/
+/* a,{
+  opacity: 0.8;
+  animation: all 3s ease-in-out survol
+;
+}
 
 
 
 
+  @keyframes survol {
+    from{
+      color:yellow;
+    }
+    to{
+      color: red;
+    }
+  } */
 
+
+  nav>ul>li>a {
+    text-decoration: none;
+    position: relative;
+  }
+  
+  nav>ul>li>a::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    bottom: 0;
+    left: 0;
+    background-color: #000;
+    transform-origin: center;
+    transform: scaleX(0);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  nav>ul>li>a:hover::after {
+    animation: underline 0.1s ease-in-out forwards;
+  }
+  
+  @keyframes underline {
+    0% {
+      transform: scaleX(0);
+    }
+    100% {
+      transform: scaleX(1);
+    }
+  }
 
 /******************************PIEDS DE PAGE***********************************/
 .footer-clean {
@@ -117,38 +153,3 @@ h1{
 }
 
 /* Credit to https://epicbootstrap.com/snippets/footer-with-columns */
-
-
-/***************repère*************/
-
-/* main{
-  border: 1px solid red;
-}
-
-ul{
-  border: 1px solid blue;
-}
-
-li{
-  border: 1px solid green
-}
-
-nav{
-  border: 1px solid pink;
-}
-
-article{
-  border: 1px solid yellow;
-} 
-
-footer{
-  border: 1px solid orange;
-}
-
-img{
-  border: thick double #32a1ce;
-}
-
-section{
-  border: 1px solid black;
-} */
