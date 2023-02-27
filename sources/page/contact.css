@@ -59,16 +59,22 @@ h1{
   }
 
 
-article>section>p,a{
-  text-decoration: none;
-  color: black;
-}
-
-@media(min-width: 576px){
-  article>section>p, a{
-    color: darkslategrey;
+  article>section>p,a{
+    text-decoration: none;
+    color: black;
+    opacity: 0.8;
   }
-}
+  
+  @media(min-width: 576px){
+    article>section>p, a{
+      color: darkslategrey;  
+    }
+  }
+
+  article>section>p,a:hover{
+    opacity: 1;
+  }
+
 
 
 /******************************PIEDS DE PAGE***********************************/
