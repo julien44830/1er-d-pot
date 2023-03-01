@@ -18,7 +18,6 @@ h1{
   text-shadow: 0px 0px 25px white;
 }
 
-
 img{
   transition: transform 0.2s ease-out;
 }
@@ -27,16 +26,14 @@ img:hover {
   transform: scale(1.1);
 }
 
-
-
-
 /********************navbar*************************/
 @media (min-width:768px) {
   nav{
     border-right : 1px solid black;
   }
 }
-/**********************************animation nav bar***************************/
+
+/*************animation nav bar******************/
 nav>ul>li>a {
   text-decoration: none;
   position: relative;
@@ -154,40 +151,4 @@ nav>ul>li>a:hover::after {
   opacity:0.6;
   
 }
-
 /* Credit to https://epicbootstrap.com/snippets/footer-with-columns */
-
-
-/***************repère*************/
-
-/* main{
-  border: 1px solid red;
-}
-
-ul{
-  border: 1px solid blue;
-}
-
-li{
-  border: 1px solid green
-}
-
-nav{
-  border: 1px solid pink;
-}
-
-article{
-  border: 1px solid yellow;
-} 
-
-footer{
-  border: 1px solid orange;
-}
-
-img{
-  border: thick double #32a1ce;
-}
-
-section{
-  border: 1px solid black;
-} */
